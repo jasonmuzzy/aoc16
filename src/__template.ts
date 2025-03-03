@@ -15,13 +15,13 @@ run(__filename, solve, false); //, {
 //     },
 //     "answers": {
 //         "selector": "code",
-//         "indexesOrLiterals": [0],
-//         "transforms": [{
-//             "functions": [
-//                 { "length": [] },
-//                 { "toString": [] }
-//             ],
-//             "appliesTo": [0]
-//         }]
-//     }
+    //     "indexesOrLiterals": [0] //,
+    //     // "transforms": [{
+    //     //     "functions": [
+    //     //         { "length": [] },
+    //     //         { "toString": [] }
+    //     //     ],
+    //     //     "appliesTo": [0]
+    //     // }]
+    // }
 // });
