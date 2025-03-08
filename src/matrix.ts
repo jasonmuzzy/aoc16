@@ -225,6 +225,13 @@ export class Rain {
         process.stdout.write(`${CSI}?25l`); // Cursor invisible
         console.log(`${'\n'.repeat(this.terminal.rows)}`); // Bunch of newlines to make empty space
         this.buffer.writeMsg();
+
+        // On CTRL+C reset the cursor.
+        // NOTE: VSCode debug disconnect does not send SIGINT
+        process.on(`SIGINT`, () => {
+            this.stop();
+            process.exit();
+        });
     }
 
     render() {

@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto';
 
-import { run } from 'aoc-copilot';
+import { argsToOptions, run } from 'aoc-copilot';
 import { sleep } from 'aoc-copilot/dist/site';
 
 import { Rain } from './matrix';
@@ -26,4 +26,5 @@ async function solve(inputs: string[], part: number, test: boolean, additionalIn
     return code.join('');
 }
 
-run(__filename, solve);
+const options = argsToOptions(process.argv);
+run(__filename, solve, options);
