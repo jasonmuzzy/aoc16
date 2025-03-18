@@ -16,6 +16,11 @@
     "sourceMap": true,
     "strict": true,
     "target": "ESNext",
+    "baseUrl": ".",
+    "paths": {
+      "linked-module-name": ["node_modules/aoc-copilot/src"],
+      "linked-module-name/*": ["node_modules/aoc-copilot/src/*"]
+    }
   },
   "exclude": ["node_modules", "dist", "test"]
 }

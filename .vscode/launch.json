@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Current TS File",
+            "name": "Current TS File (ts-node)",
             "type": "node",
             "request": "launch",
             "args": [
@@ -14,14 +14,15 @@
             "runtimeArgs": [
                 "--nolazy",
                 "-r",
-                "ts-node/register"
+                "ts-node/register",
+                "--preserve-symlinks"
             ],
             "sourceMaps": true,
             "cwd": "${workspaceRoot}",
             "console": "integratedTerminal",
         },
         {
-            "name": "tsx",
+            "name": "Current TS File (tsx)",
             "type": "node",
             "request": "launch",
         
@@ -33,7 +34,7 @@
              * Assuming locally installed
              */
             "runtimeExecutable": "tsx",
-        
+
             /*
              * Open terminal when debugging starts (Optional)
              * Useful to see console.logs
