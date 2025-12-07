@@ -4,7 +4,7 @@ Uses [Advent of Code Copilot](https://github.com/jasonmuzzy/aoc-copilot) as the 
 
 ## Matrix Effect
 
-Day 16 part 2 challenged, "Be extra proud of your solution if it uses a cinematic "decrypting" animation."  Here's mine.
+Day 5 part 2 challenged, "Be extra proud of your solution if it uses a cinematic "decrypting" animation."  Here's mine.
 
 <img src="matrix-min.gif" align="left"/>
 
